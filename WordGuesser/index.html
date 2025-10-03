@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WordGuesser</title>
+        <script src="words.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p id="alert"></p>
+        <img src="retry.png" id="retry" onclick="retry()">
+        <div class="guess" id="guess1">
+            <p class="letter" id="letter1-1"></p>
+            <p class="letter" id="letter1-2"></p>
+            <p class="letter" id="letter1-3"></p>
+            <p class="letter" id="letter1-4"></p>
+            <p class="letter" id="letter1-5"></p>
+        </div>
+        <div class="guess" id="guess2">
+            <p class="letter" id="letter2-1"></p>
+            <p class="letter" id="letter2-2"></p>
+            <p class="letter" id="letter2-3"></p>
+            <p class="letter" id="letter2-4"></p>
+            <p class="letter" id="letter2-5"></p>
+        </div>
+        <div class="guess" id="guess3">
+            <p class="letter" id="letter3-1"></p>
+            <p class="letter" id="letter3-2"></p>
+            <p class="letter" id="letter3-3"></p>
+            <p class="letter" id="letter3-4"></p>
+            <p class="letter" id="letter3-5"></p>
+        </div>
+        <div class="guess" id="guess4">
+            <p class="letter" id="letter4-1"></p>
+            <p class="letter" id="letter4-2"></p>
+            <p class="letter" id="letter4-3"></p>
+            <p class="letter" id="letter4-4"></p>
+            <p class="letter" id="letter4-5"></p>
+        </div>
+        <div class="guess" id="guess5">
+            <p class="letter" id="letter5-1"></p>
+            <p class="letter" id="letter5-2"></p>
+            <p class="letter" id="letter5-3"></p>
+            <p class="letter" id="letter5-4"></p>
+            <p class="letter" id="letter5-5"></p>
+        </div>
+        <div class="guess" id="guess6">
+            <p class="letter" id="letter6-1"></p>
+            <p class="letter" id="letter6-2"></p>
+            <p class="letter" id="letter6-3"></p>
+            <p class="letter" id="letter6-4"></p>
+            <p class="letter" id="letter6-5"></p>
+        </div>
+
+        <div class="guessedRow" id="row1">
+            <p class="guessed" id="q" onclick="addLetter('q')">Q</p>
+            <p class="guessed" id="w" onclick="addLetter('w')">W</p>
+            <p class="guessed" id="e" onclick="addLetter('e')">E</p>
+            <p class="guessed" id="r" onclick="addLetter('r')">R</p>
+            <p class="guessed" id="t" onclick="addLetter('t')">T</p>
+            <p class="guessed" id="y" onclick="addLetter('y')">Y</p>
+            <p class="guessed" id="u" onclick="addLetter('u')">U</p>
+            <p class="guessed" id="i" onclick="addLetter('i')">I</p>
+            <p class="guessed" id="o" onclick="addLetter('o')">O</p>
+            <p class="guessed" id="p" onclick="addLetter('p')">P</p>
+        </div>
+        <div class="guessedRow">
+            <p class="guessed" id="a" onclick="addLetter('a')">A</p>
+            <p class="guessed" id="s" onclick="addLetter('s')">S</p>
+            <p class="guessed" id="d" onclick="addLetter('d')">D</p>
+            <p class="guessed" id="f" onclick="addLetter('f')">F</p>
+            <p class="guessed" id="g" onclick="addLetter('g')">G</p>
+            <p class="guessed" id="h" onclick="addLetter('h')">H</p>
+            <p class="guessed" id="j" onclick="addLetter('j')">J</p>
+            <p class="guessed" id="k" onclick="addLetter('k')">K</p>
+            <p class="guessed" id="l" onclick="addLetter('l')">L</p>
+        </div>
+        <div class="guessedRow">
+            <p class="guessed" id="specialKey" onclick="guessWord()">ENTER</p>
+            <p class="guessed" id="z" onclick="addLetter('z')">Z</p>
+            <p class="guessed" id="x" onclick="addLetter('x')">X</p>
+            <p class="guessed" id="c" onclick="addLetter('c')">C</p>
+            <p class="guessed" id="v" onclick="addLetter('v')">V</p>
+            <p class="guessed" id="b" onclick="addLetter('b')">B</p>
+            <p class="guessed" id="n" onclick="addLetter('n')">N</p>
+            <p class="guessed" id="m" onclick="addLetter('m')">M</p>
+            <p class="guessed" id="specialKey" onclick="removeLetter()">BACK</p>
+        </div>
+        </div>
+        <p id="creators">Made by: Logan Hoang and Bobby Kim</p>
+        <script src="index.js"></script>
+    </body>
+</html>
