@@ -113,7 +113,7 @@ const guessWord = () => {
         if (guessNumber == 5) notify('Okay..');
         if (guessNumber == 6) notify('Damn...');
     } else {
-        if (guessNumber == 6) setTimeout(() => notify(word.toUpperCase(), 2000), 2000);
+        if (guessNumber == 6) setTimeout(() => notify(word.toUpperCase(), 2000), 5000);
     }
     
     guessNumber++;
